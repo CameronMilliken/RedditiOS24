@@ -12,7 +12,6 @@
 @implementation CRMPostController
 
 + (NSURL *)baseUrl
-
 {
     return [NSURL URLWithString:@"https://www.reddit.com/r/"];
 }
@@ -33,7 +32,7 @@
         }
         
         //Check response
-        NSLog(@"%@", response);
+//        NSLog(@"%@", response);
         if (!data){
             NSLog(@"No data available");
             completion(nil);
@@ -69,9 +68,9 @@
             NSLog(@"There was an error fetching your imageData from the NSURL %@", error.localizedDescription);
         }
         //response
-        if (response) {
-            NSLog(@"%@", response);
-        }
+//        if (response) {
+//            NSLog(@"%@", response);
+//        }
         // If there is no image data...
         if (!imageData){
             NSLog(@"No image data from network request %@", error.localizedDescription);
