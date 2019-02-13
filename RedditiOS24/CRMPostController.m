@@ -51,10 +51,45 @@
             CRMPost *post = [[CRMPost alloc] initWithDictionary:postDictionary];
             
             [postsArray addObject:post];
-            
         }
         completion(postsArray);
     }]resume];
 }
+
++ (void)fetchImageFromImageString:(NSString *)imageString completion:(void (^)(UIImage * _Nullable))completion
+
+{
+    // Create a URL from the image string
+    NSURL *imageURL = [[NSURL alloc] initWithString:imageString];
+    
+    //Use the URL to make a network call
+    [[[NSURLSession sharedSession] dataTaskWithURL: imageURL completionHandler:^(NSData * _Nullable imageData, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        // Handle the error
+        if (error) {
+            NSLog(@"There was an error fetching your imageData from the NSURL %@", error.localizedDescription);
+        }
+        //response
+        if (response) {
+            NSLog(@"%@", response);
+        }
+        // If there is no image data...
+        if (!imageData){
+            NSLog(@"No image data from network request %@", error.localizedDescription);
+        }
+        // With this data init an image
+        UIImage *image = [[UIImage alloc] initWithData:imageData];
+        
+        if (image) {
+            // Complete image
+            completion(image);
+        } else {
+            return completion(nil);
+        }
+    }]resume];
+    
+}
+
+
+
 
 @end
