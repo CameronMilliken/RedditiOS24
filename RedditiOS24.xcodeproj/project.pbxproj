@@ -13,6 +13,7 @@
 		B406267022149B49001EECF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B406266E22149B49001EECF7 /* LaunchScreen.storyboard */; };
 		B406267322149B49001EECF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B406267222149B49001EECF7 /* main.m */; };
 		B406267D2214A2F8001EECF7 /* CRMPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B406267C2214A2F8001EECF7 /* CRMPost.m */; };
+		B40626812214A814001EECF7 /* CRMPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = B40626802214A814001EECF7 /* CRMPostController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B406267222149B49001EECF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B406267B2214A2F8001EECF7 /* CRMPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMPost.h; sourceTree = "<group>"; };
 		B406267C2214A2F8001EECF7 /* CRMPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMPost.m; sourceTree = "<group>"; };
+		B406267F2214A814001EECF7 /* CRMPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMPostController.h; sourceTree = "<group>"; };
+		B40626802214A814001EECF7 /* CRMPostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMPostController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 				B406267E2214A2FD001EECF7 /* Model */,
 				B406267A2214A2CF001EECF7 /* Storyboard */,
 				B406267922149D73001EECF7 /* Resources */,
+				B406267F2214A814001EECF7 /* CRMPostController.h */,
+				B40626802214A814001EECF7 /* CRMPostController.m */,
 			);
 			path = RedditiOS24;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			files = (
 				B406267322149B49001EECF7 /* main.m in Sources */,
 				B406266522149B48001EECF7 /* AppDelegate.m in Sources */,
+				B40626812214A814001EECF7 /* CRMPostController.m in Sources */,
 				B406267D2214A2F8001EECF7 /* CRMPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
