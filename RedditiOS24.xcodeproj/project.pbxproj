@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B406266522149B48001EECF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B406266422149B48001EECF7 /* AppDelegate.m */; };
-		B406266822149B48001EECF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B406266722149B48001EECF7 /* ViewController.m */; };
 		B406266B22149B48001EECF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B406266922149B48001EECF7 /* Main.storyboard */; };
 		B406266D22149B49001EECF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B406266C22149B49001EECF7 /* Assets.xcassets */; };
 		B406267022149B49001EECF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B406266E22149B49001EECF7 /* LaunchScreen.storyboard */; };
 		B406267322149B49001EECF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B406267222149B49001EECF7 /* main.m */; };
+		B406267D2214A2F8001EECF7 /* CRMPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B406267C2214A2F8001EECF7 /* CRMPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B406266022149B48001EECF7 /* RedditiOS24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditiOS24.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B406266322149B48001EECF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B406266422149B48001EECF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B406266622149B48001EECF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B406266722149B48001EECF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B406266A22149B48001EECF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B406266C22149B49001EECF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B406266F22149B49001EECF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B406267122149B49001EECF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B406267222149B49001EECF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B406267B2214A2F8001EECF7 /* CRMPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMPost.h; sourceTree = "<group>"; };
+		B406267C2214A2F8001EECF7 /* CRMPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +58,41 @@
 		B406266222149B48001EECF7 /* RedditiOS24 */ = {
 			isa = PBXGroup;
 			children = (
+				B406267E2214A2FD001EECF7 /* Model */,
+				B406267A2214A2CF001EECF7 /* Storyboard */,
+				B406267922149D73001EECF7 /* Resources */,
+			);
+			path = RedditiOS24;
+			sourceTree = "<group>";
+		};
+		B406267922149D73001EECF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				B406266322149B48001EECF7 /* AppDelegate.h */,
 				B406266422149B48001EECF7 /* AppDelegate.m */,
-				B406266622149B48001EECF7 /* ViewController.h */,
-				B406266722149B48001EECF7 /* ViewController.m */,
-				B406266922149B48001EECF7 /* Main.storyboard */,
 				B406266C22149B49001EECF7 /* Assets.xcassets */,
 				B406266E22149B49001EECF7 /* LaunchScreen.storyboard */,
 				B406267122149B49001EECF7 /* Info.plist */,
 				B406267222149B49001EECF7 /* main.m */,
 			);
-			path = RedditiOS24;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B406267A2214A2CF001EECF7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B406266922149B48001EECF7 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B406267E2214A2FD001EECF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B406267B2214A2F8001EECF7 /* CRMPost.h */,
+				B406267C2214A2F8001EECF7 /* CRMPost.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B406266822149B48001EECF7 /* ViewController.m in Sources */,
 				B406267322149B49001EECF7 /* main.m in Sources */,
 				B406266522149B48001EECF7 /* AppDelegate.m in Sources */,
+				B406267D2214A2F8001EECF7 /* CRMPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +310,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AH8N698PRG;
-				INFOPLIST_FILE = RedditiOS24/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/RedditiOS24/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,8 +327,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AH8N698PRG;
-				INFOPLIST_FILE = RedditiOS24/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/RedditiOS24/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
